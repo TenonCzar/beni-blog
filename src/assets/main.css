@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-neutral-900 font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#FF6A00] text-white font-body font-medium tracking-widest text-xs uppercase px-8 py-3 transition-colors duration-200 hover:bg-[#e05e00];
+  }
+
+  .btn-outline {
+    @apply border border-neutral-900 text-neutral-900 font-body font-medium tracking-widest text-xs uppercase px-8 py-3 transition-colors duration-200 hover:bg-neutral-900 hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply text-neutral-600 font-body font-medium tracking-widest text-xs uppercase transition-colors duration-200 hover:text-[#FF6A00];
+  }
+
+  .nav-link {
+    @apply font-body text-xs font-medium tracking-widest uppercase text-neutral-700 hover:text-[#FF6A00] transition-colors duration-200;
+  }
+
+  .post-card-title {
+    @apply font-display text-2xl font-light leading-snug hover:text-[#FF6A00] transition-colors duration-200;
+  }
+
+  .section-label {
+    @apply font-mono text-xs tracking-widest uppercase text-[#FF6A00];
+  }
+
+  .divider {
+    @apply border-t border-neutral-200;
+  }
+
+  .prose-fashion p {
+    @apply text-neutral-700 leading-relaxed text-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6A00;
+}
