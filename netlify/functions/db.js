@@ -11,7 +11,7 @@ async function getClient() {
   if (client) return client;
 
   if (process.env.TURSO_URL) {
-    const { createClient } = require("@libsql/client");
+    const { createClient } = require("@libsql/client/http");
     client = createClient({
       url: process.env.TURSO_URL,
       authToken: process.env.TURSO_AUTH_TOKEN,
