@@ -1,4 +1,4 @@
-const { ADMIN_USER, ADMIN_PASS, generateToken, cors } = require('./auth')
+const { ADMIN_USER, ADMIN_PASS, generateToken, cors } = require('./auth.cjs')
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') return cors({})

@@ -11,9 +11,12 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@libsql/client@0.17",
+        "npm:@tailwindcss/typography@0.5",
         "npm:@vitejs/plugin-vue@5",
         "npm:@vueuse/head@2",
         "npm:autoprefixer@^10.4.0",
+        "npm:better-sqlite3@^12.6.2",
         "npm:marked@12",
         "npm:postcss@^8.4.0",
         "npm:tailwindcss@^3.4.0",

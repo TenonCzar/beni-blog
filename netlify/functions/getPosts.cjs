@@ -1,5 +1,5 @@
-const { cors } = require('./auth')
-const { getClient } = require('./db')
+const { cors } = require('./auth.cjs')
+const { getClient } = require('./db.cjs')
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') return cors({})
